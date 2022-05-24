@@ -56,9 +56,10 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\RoomSpawn.cs" />
+    <Compile Include="Assets\Scripts\Destruccion.cs" />
     <Compile Include="Assets\Scripts\RoomTemplates.cs" />
-    <Compile Include="Assets\Destruccion.cs" />
+    <Compile Include="Assets\Scripts\RoomSpawn.cs" />
+    <Compile Include="Assets\Scripts\AgregarSalasAlistas.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

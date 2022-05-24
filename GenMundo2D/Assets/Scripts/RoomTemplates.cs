@@ -21,7 +21,7 @@ public class RoomTemplates : MonoBehaviour
     }
     void SpawnBoss()
     {
-        Instantiate(boss, rooms[rooms.Count - 1].transform.position);
+        Instantiate(boss, rooms[rooms.Count - 1].transform.position, Quaternion.Euler(0,0,0));
     }
 
 }

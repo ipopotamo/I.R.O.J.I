@@ -486,8 +486,8 @@ MonoBehaviour:
   closedRoom: {fileID: 7668401184768358331, guid: 7a5eb145c973efc42a950d84c7231f08, type: 3}
   rooms: []
   boss:
-  - {fileID: 3405248576820413218, guid: b63c31f63f9d6724e82223855921ade3, type: 3}
   - {fileID: 6374180211675682681, guid: 6a2f086e9d6f0464da5c32915a273e17, type: 3}
+  - {fileID: 3405248576820413218, guid: b63c31f63f9d6724e82223855921ade3, type: 3}
   - {fileID: 1992608614293890477, guid: 905715b0bae68594eb8c504292f296cd, type: 3}
 --- !u!4 &1514046894
 Transform:
