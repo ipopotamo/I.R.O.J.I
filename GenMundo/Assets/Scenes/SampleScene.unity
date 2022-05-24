@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 43438511}
   - component: {fileID: 43438509}
   - component: {fileID: 43438510}
+  - component: {fileID: 43438513}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -235,12 +236,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43438508}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 5.19, y: -0, z: 24.35}
+  m_LocalPosition: {x: 5.24, y: -0, z: 25.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &43438513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43438508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cdb173c4e42259499adf8c3c0462225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,7 +341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -4.2, y: 10.05, z: 7.28}
+  m_LocalPosition: {x: -8.7, y: 74.3, z: 15.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -459,10 +472,10 @@ MonoBehaviour:
   - {fileID: 7220259665199154528, guid: a0757ee7032199d4890dd26550e41e18, type: 3}
   - {fileID: 73897705628315412, guid: 8c69a59bbb7e33041a010c2df690ef17, type: 3}
   SalidaDerecha:
-  - {fileID: 5585670441820394509, guid: b0a626c2220fd604296078f70cc83463, type: 3}
   - {fileID: 2602482825534457480, guid: 63c77ee635ecc764dab0290ab19e844b, type: 3}
   - {fileID: 2500364269081212252, guid: ada7b4185b1f3944abe181280c32ba5e, type: 3}
   - {fileID: 8483698165893475486, guid: be83d679db510054c9cca7b0db0a2960, type: 3}
+  - {fileID: 5585670441820394509, guid: b0a626c2220fd604296078f70cc83463, type: 3}
   - {fileID: 5585670441820394509, guid: b0a626c2220fd604296078f70cc83463, type: 3}
   SalidaIzquierda:
   - {fileID: 1273392692386814630, guid: 0e75fb2afb840b24f9a5f069c0a62ec2, type: 3}
@@ -472,7 +485,10 @@ MonoBehaviour:
   - {fileID: 1273392692386814630, guid: 0e75fb2afb840b24f9a5f069c0a62ec2, type: 3}
   closedRoom: {fileID: 7668401184768358331, guid: 7a5eb145c973efc42a950d84c7231f08, type: 3}
   rooms: []
-  boss: {fileID: 1937555436081606290, guid: 67664f0ae2cf7024198f433ec4b1fc88, type: 3}
+  boss:
+  - {fileID: 3405248576820413218, guid: b63c31f63f9d6724e82223855921ade3, type: 3}
+  - {fileID: 6374180211675682681, guid: 6a2f086e9d6f0464da5c32915a273e17, type: 3}
+  - {fileID: 1992608614293890477, guid: 905715b0bae68594eb8c504292f296cd, type: 3}
 --- !u!4 &1514046894
 Transform:
   m_ObjectHideFlags: 0

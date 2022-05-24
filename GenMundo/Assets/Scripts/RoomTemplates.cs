@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RoomTemplates : MonoBehaviour
 {
-
+    private int rand;
     public GameObject[] SalidaBAja;
     public GameObject[] SalidaAlta;
     public GameObject[] SalidaDerecha;
@@ -14,7 +14,7 @@ public class RoomTemplates : MonoBehaviour
 
     public List<GameObject> rooms;
 
-    public GameObject boss;
+    public GameObject[] boss;
 
     private void Start()
     {
@@ -22,7 +22,9 @@ public class RoomTemplates : MonoBehaviour
     }
     void SpawnBoss()
     {
-        Instantiate(boss, rooms[rooms.Count - 1].transform.position, Quaternion.identity);
+        rand = Random.Range(0,boss.Length);
+        Instantiate(boss[rand], rooms[rooms.Count - 1]. transform.position, Quaternion.Euler(90, 0, 0));
+        //Instantiate(boss, rooms[rooms.Count - 1].transform.position, Quaternion.Euler(90,0,0));
     }
 
 }
