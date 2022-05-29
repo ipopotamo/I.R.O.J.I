@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\RoomSpawn.cs" />
     <Compile Include="Assets\Scripts\Controlador.cs" />
     <Compile Include="Assets\Scripts\AgregarALista.cs" />
+    <Compile Include="Assets\Scripts\PausaControlador.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DeepSpaceSkyboxPack\GalaxyFire\Galaxy Fire Skybox Readme.txt" />

@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Controlador : MonoBehaviour
 {
+
+    public void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     public void EscenaJuego()
     {
         SceneManager.LoadScene("Juego");
@@ -12,12 +18,10 @@ public class Controlador : MonoBehaviour
     }
     public void Salir()
     {
-#if UNITY_EDITOR
+        #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-#else
+        #else
             Application.Quit();
-#endif
-
-
+        #endif
     }
 }
