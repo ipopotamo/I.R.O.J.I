@@ -50,6 +50,7 @@ public class PausaControlador : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
         menuPausa.SetActive(false);
+        Time.timeScale = 1f;
     }
     public void Cerrar_juego()
     {

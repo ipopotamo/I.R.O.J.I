@@ -1142,7 +1142,7 @@ MonoBehaviour:
   - {fileID: 6002447273140081555, guid: 39fb80f3a4785b443bbfb7d4451f03bf, type: 3}
   closedRoom: {fileID: 86026638970702569, guid: c0d1770b4dc181346882504a952655c4, type: 3}
   rooms: []
-  boss: {fileID: 5986242861804418535, guid: 6f0233ba1ce1fdb449de1d9f9ab58946, type: 3}
+  boss: {fileID: 8037065748261504614, guid: 2fa5a9af2510c504da191de172e47dc3, type: 3}
 --- !u!4 &999097591
 Transform:
   m_ObjectHideFlags: 0
