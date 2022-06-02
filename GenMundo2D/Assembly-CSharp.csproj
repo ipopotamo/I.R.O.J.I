@@ -62,11 +62,15 @@
     <Compile Include="Assets\Scripts\Controlador.cs" />
     <Compile Include="Assets\Scripts\AgregarALista.cs" />
     <Compile Include="Assets\Scripts\PausaControlador.cs" />
+    <Compile Include="Assets\FXAA\Scripts\FXAA.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\FXAA\README.txt" />
+    <None Include="Assets\FXAA\Shaders\Fxaa3_9.cginc" />
     <None Include="Assets\DeepSpaceSkyboxPack\GalaxyFire\Galaxy Fire Skybox Readme.txt" />
     <None Include="Assets\DeepSpaceSkyboxPack\DiverseSpace\Diverse Space Skybox Readme.txt" />
     <None Include="Assets\DeepSpaceSkyboxPack\GalacticGreen\Galactic Green Skybox Readme.txt" />
+    <None Include="Assets\FXAA\Shaders\Fxaa3.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
