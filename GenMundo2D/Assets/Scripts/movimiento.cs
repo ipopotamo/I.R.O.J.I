@@ -1,0 +1,32 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class movimiento : MonoBehaviour
+{
+    [SerializeField]private float velo = 2f;
+
+    private Rigidbody2D jugador;
+    private Vector2 movi;
+
+    void Start()
+    {
+        jugador = GetComponent<Rigidbody2D>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        float movX = Input.GetAxisRaw("Horizontal");
+        float movY = Input.GetAxisRaw("Vertical");
+        movi = new Vector2(movX, movY).normalized;
+    }
+
+    private void FixedUpdate()
+    {
+        jugador.MovePosition(jugador.position + movi * velo * Time.fixedDeltaTime);
+
+    }
+
+
+}
