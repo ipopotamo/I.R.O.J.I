@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637903314340686622
-    m_Hash: 4274665902
+      ticks: 637903775692300576
+    m_Hash: 1547702979
   m_LockFileStatus:
     m_FilePath: C:/Users/Alumno/Desktop/I.R.O.J.I/GenMundo2D/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637903314342152709
-    m_Hash: 3410758723
+      ticks: 637903775692310571
+    m_Hash: 2055670594
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -342,7 +342,6 @@ m_PackageAssets:
         - 6.0.1
         - 6.0.2
         - 6.0.3
-        - 6.0.4
         - 7.0.0-pre.3
         - 7.0.0-pre.4
         - 7.0.0

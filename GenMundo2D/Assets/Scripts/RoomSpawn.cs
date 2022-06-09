@@ -13,6 +13,7 @@ public class RoomSpawn : MonoBehaviour
     private RoomTemplates templates;
     private int rand;
     private bool spawned = false;
+    public int id;
 
     void Start()
     {
@@ -47,7 +48,9 @@ public class RoomSpawn : MonoBehaviour
                 rand = Random.Range(0, templates.SalidaDerecha.Length);
                 Instantiate(templates.SalidaDerecha[rand], transform.position, templates.SalidaDerecha[rand].transform.rotation);
             }
-
+            id = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>().id;
+            GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>().id++;
+            //Debug.Log(id);
             spawned = true;
         }
 
@@ -56,7 +59,10 @@ public class RoomSpawn : MonoBehaviour
     {
         if (other.CompareTag("SpawnPoint"))
         {
-            Destroy(gameObject);
+            if(other.GetComponent<RoomSpawn>().id < id)
+            {
+                Destroy(gameObject);
+            }
         }
 
     }

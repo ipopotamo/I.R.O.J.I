@@ -9,6 +9,8 @@ public class RoomTemplates : MonoBehaviour
     public GameObject[] SalidaDerecha;
     public GameObject[] SalidaIzquierda;
 
+    public int id = 0;
+
     public GameObject closedRoom;
 
     public List<GameObject> rooms;
