@@ -59,10 +59,10 @@ public class RoomSpawn : MonoBehaviour
     {
         if (other.CompareTag("SpawnPoint"))
         {
-            if(other.GetComponent<RoomSpawn>().id < id)
-            {
+            //if(other.GetComponent<RoomSpawn>().id < id)
+            //{
                 Destroy(gameObject);
-            }
+            //}
         }
 
     }
