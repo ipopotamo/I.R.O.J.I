@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\AgregarALista.cs" />
     <Compile Include="Assets\Scripts\PausaControlador.cs" />
     <Compile Include="Assets\Scripts\Vida.cs" />
+    <Compile Include="Assets\Scripts\CambioDeRotacion.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DeepSpaceSkyboxPack\GalaxyFire\Galaxy Fire Skybox Readme.txt" />

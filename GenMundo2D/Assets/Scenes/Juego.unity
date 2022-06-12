@@ -809,6 +809,8 @@ GameObject:
   - component: {fileID: 342978293}
   - component: {fileID: 342978294}
   - component: {fileID: 342978295}
+  - component: {fileID: 342978296}
+  - component: {fileID: 342978297}
   m_Layer: 0
   m_Name: Juan
   m_TagString: Untagged
@@ -956,6 +958,38 @@ MonoBehaviour:
   Barravida: {fileID: 2048601851}
   moriste: {fileID: 1513781854}
   vidaSlider: {fileID: 2048601853}
+--- !u!95 &342978296
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342978289}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8035735d0fad14840a56c20bb550b533, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &342978297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342978289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc51918655e9b4440b7a56f4d0d2c3a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 519420031}
 --- !u!1 &350290300
 GameObject:
   m_ObjectHideFlags: 0
@@ -2157,6 +2191,7 @@ GameObject:
   - component: {fileID: 838090559}
   - component: {fileID: 838090564}
   - component: {fileID: 838090565}
+  - component: {fileID: 838090566}
   m_Layer: 5
   m_Name: ControladorDeMenu
   m_TagString: Untagged
@@ -2295,6 +2330,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &838090566
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838090558}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8035735d0fad14840a56c20bb550b533, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &856747945
 GameObject:
   m_ObjectHideFlags: 0
