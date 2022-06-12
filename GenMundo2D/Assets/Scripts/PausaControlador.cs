@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PausaControlador : MonoBehaviour
 {
-    [SerializeField] private GameObject botonPausa;
+    //[SerializeField] private GameObject botonPausa;
     [SerializeField] private GameObject menuPausa;
     private bool juegopausado = false;
 
@@ -29,14 +29,14 @@ public class PausaControlador : MonoBehaviour
         juegopausado = true;
         Debug.Log("Pausado");
         Time.timeScale = 0f;
-        botonPausa.SetActive(false);
+      //  botonPausa.SetActive(false);
         menuPausa.SetActive(true);
     }
     public void Reanudar()
     {
         juegopausado = false;
         Time.timeScale = 1f;
-        botonPausa.SetActive(true);
+        //botonPausa.SetActive(true);
         menuPausa.SetActive(false);
     }
     public void Reiniciar()

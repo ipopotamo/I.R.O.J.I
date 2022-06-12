@@ -6,6 +6,8 @@ TagManager:
   tags:
   - SpawnPoint
   - Rooms
+  - Fuego
+  - Mas_Vida
   layers:
   - Default
   - TransparentFX

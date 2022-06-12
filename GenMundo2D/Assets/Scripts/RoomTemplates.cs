@@ -9,6 +9,9 @@ public class RoomTemplates : MonoBehaviour
     public GameObject[] SalidaDerecha;
     public GameObject[] SalidaIzquierda;
 
+    public float Dañofuego = 0;
+    public float RecuperaHP = 50;
+
     public int id = 0;
 
     public GameObject closedRoom;
