@@ -1266,7 +1266,7 @@ GameObject:
   - component: {fileID: 6801243181131114681}
   m_Layer: 0
   m_Name: SpawnPoint (1)
-  m_TagString: SpawnPoint
+  m_TagString: RB
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1327,6 +1327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openSide: 2
+  id: 0
 --- !u!1 &2039026833062791529
 GameObject:
   m_ObjectHideFlags: 0
@@ -4537,7 +4538,7 @@ GameObject:
   - component: {fileID: 9115566601024035968}
   m_Layer: 0
   m_Name: SpawnPoint
-  m_TagString: SpawnPoint
+  m_TagString: RB
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4598,3 +4599,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openSide: 3
+  id: 0

@@ -3030,6 +3030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openSide: 1
+  id: 0
 --- !u!1 &6664736566398827304
 GameObject:
   m_ObjectHideFlags: 0

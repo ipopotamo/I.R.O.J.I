@@ -4169,6 +4169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openSide: 2
+  id: 0
 --- !u!1 &7088089724013594751
 GameObject:
   m_ObjectHideFlags: 0

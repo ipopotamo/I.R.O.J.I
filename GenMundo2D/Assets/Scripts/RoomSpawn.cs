@@ -57,12 +57,22 @@ public class RoomSpawn : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("SpawnPoint"))
-        {
-            //if(other.GetComponent<RoomSpawn>().id < id)
-            //{
+        
+            if (CompareTag("LB") || CompareTag("TL") || CompareTag("RB") || CompareTag("RT"))
+            {
+            if (other.gameObject.tag == "TR")
+            {
                 Destroy(gameObject);
-            //}
+            }
+            else if (other.gameObject.tag == "TL")
+                    {
+                        Destroy(gameObject);
+                    }
+            //Se destrulle al tocar el destructor
+            else if (other.gameObject.tag == "SpawnPoint")
+            {
+                Destroy(gameObject);
+            }
         }
 
     }

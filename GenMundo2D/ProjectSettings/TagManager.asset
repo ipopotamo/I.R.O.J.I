@@ -8,6 +8,14 @@ TagManager:
   - Rooms
   - Fuego
   - Mas_Vida
+  - LB
+  - TL
+  - RB
+  - RT
+  - L
+  - R
+  - B
+  - T
   layers:
   - Default
   - TransparentFX
