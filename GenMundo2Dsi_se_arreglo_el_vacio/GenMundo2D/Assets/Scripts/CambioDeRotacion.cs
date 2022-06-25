@@ -7,8 +7,8 @@ public class CambioDeRotacion : MonoBehaviour
     private Vector3 objetivo;
 
 
-    [SerializeField] private Disparar ProyectilPrefab;
-    [SerializeField] private Transform PosiciondeDisparo;
+    //[SerializeField] private Disparar ProyectilPrefab;
+    //[SerializeField] private Transform PosiciondeDisparo;
     [SerializeField] private Camera Camera;
 
     private void Update()
@@ -19,10 +19,10 @@ public class CambioDeRotacion : MonoBehaviour
         float anguloGrados = (180 / Mathf.PI) * anguloRadianes - 90;
         transform.rotation = Quaternion.Euler(0, 0, anguloGrados);
 
-        if (Input.GetMouseButtonDown(0))
-        {
-           Disparar dispararpez= Instantiate(ProyectilPrefab, PosiciondeDisparo.position, transform.rotation);
-            dispararpez.DispararDisparo(transform.up);
-        }
+        //if (Input.GetMouseButtonDown(0))
+        //{
+         //  Disparar dispararpez= Instantiate(ProyectilPrefab, PosiciondeDisparo.position, transform.rotation);
+           // dispararpez.DispararDisparo(transform.up);
+        //}
     }
 }
