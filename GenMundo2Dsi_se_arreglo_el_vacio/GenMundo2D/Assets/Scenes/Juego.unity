@@ -684,7 +684,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229591358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.346, y: 5.587, z: -10}
+  m_LocalPosition: {x: 5.366, y: 5.261, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1975492598}
@@ -877,7 +877,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.9, y: 2.42}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -891,7 +891,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342978289}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.346, y: 5.587, z: 0}
+  m_LocalPosition: {x: 5.366, y: 5.261, z: 0}
   m_LocalScale: {x: 0.5326125, y: 0.57549316, z: 1}
   m_Children:
   - {fileID: 839759843}
@@ -937,7 +937,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.9, y: 2}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 2.9, y: 2.42}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -993,7 +993,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controladorGolpe: {fileID: 839759843}
   RadioDeGolpe: 1
-  "Da\xF1oBarrido": 20
+  RadioDeBarrido: 1.5
+  "Da\xF1oGolpe": 10
+  "Da\xF1oBarrido": 25
 --- !u!114 &342978298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1496,7 +1498,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.346, y: 5.587, z: -10}
+  m_LocalPosition: {x: 5.366, y: 5.261, z: -10}
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2753,7 +2755,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 82.938, y: 92.306}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1088424789

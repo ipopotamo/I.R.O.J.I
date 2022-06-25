@@ -1,0 +1,360 @@
+fileFormatVersion: 2
+guid: 46505da6b96dc1a448bcd7ffd8ab00ea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -259449399226278000
+    second: BarridoSprite_0
+  - first:
+      213: -5607184456795180134
+    second: BarridoSprite_1
+  - first:
+      213: 5865971699464226473
+    second: BarridoSprite_2
+  - first:
+      213: -5264567971267967586
+    second: BarridoSprite_3
+  - first:
+      213: 3228003862357920427
+    second: BarridoSprite_4
+  - first:
+      213: 6015191744738223571
+    second: BarridoSprite_5
+  - first:
+      213: -5845456024211104233
+    second: BarridoSprite_6
+  - first:
+      213: -6517522438098867108
+    second: BarridoSprite_7
+  - first:
+      213: 2852023434380968045
+    second: BarridoSprite_8
+  - first:
+      213: -3024106601621658207
+    second: BarridoSprite_9
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BarridoSprite_0
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 89
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.3867952, y: 0.15068279}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09fdde16520466cf0800000000000000
+      internalID: -259449399226278000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarridoSprite_1
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 89
+        width: 319
+        height: 229
+      alignment: 9
+      pivot: {x: 0.35734093, y: 0.13814089}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93b1a6d1774f22b0800000000000000
+      internalID: -5607184456795180134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarridoSprite_2
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 89
+        width: 359
+        height: 315
+      alignment: 9
+      pivot: {x: 0.31836823, y: 0.10971387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a64f017e2e186150800000000000000
+      internalID: 5865971699464226473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarridoSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 89
+        width: 312
+        height: 332
+      alignment: 9
+      pivot: {x: 0.35631698, y: 0.07855176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e958ca0b25f70f6b0800000000000000
+      internalID: -5264567971267967586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarridoSprite_4
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 89
+        width: 259
+        height: 341
+      alignment: 9
+      pivot: {x: 0.4344374, y: 0.07573196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baace6df86c2ccc20800000000000000
+      internalID: 3228003862357920427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarridoSprite_5
+      rect:
+        serializedVersion: 2
+        x: 2634
+        y: 89
+        width: 212
+        height: 344
+      alignment: 9
+      pivot: {x: 0.52242637, y: 0.07350844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5ebf0a5014a7350800000000000000
+      internalID: 6015191744738223571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarridoSprite_6
+      rect:
+        serializedVersion: 2
+        x: 3134
+        y: 89
+        width: 212
+        height: 329
+      alignment: 9
+      pivot: {x: 0.53203887, y: 0.076773204}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71edabe67b4c0eea0800000000000000
+      internalID: -5845456024211104233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarridoSprite_7
+      rect:
+        serializedVersion: 2
+        x: 3619
+        y: 89
+        width: 227
+        height: 302
+      alignment: 9
+      pivot: {x: 0.5658276, y: 0.097411655}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5caa75bfdb1d85a0800000000000000
+      internalID: -6517522438098867108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarridoSprite_8
+      rect:
+        serializedVersion: 2
+        x: 4108
+        y: 89
+        width: 239
+        height: 280
+      alignment: 9
+      pivot: {x: 0.5795735, y: 0.10701847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d600e51f33c649720800000000000000
+      internalID: 2852023434380968045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarridoSprite_9
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 89
+        width: 244
+        height: 217
+      alignment: 9
+      pivot: {x: 0.61969894, y: 0.1431709}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a56d6771173806d0800000000000000
+      internalID: -3024106601621658207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -6,6 +6,8 @@ public class CombateCuerpoaCuerpo : MonoBehaviour
 {
     [SerializeField] private Transform controladorGolpe;
     [SerializeField] private float RadioDeGolpe;
+    [SerializeField] private float RadioDeBarrido;
+    [SerializeField] private float DañoGolpe;
     [SerializeField] private float DañoBarrido;
     private Animator animator;
 
@@ -18,6 +20,10 @@ public class CombateCuerpoaCuerpo : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             Golpe();
+        }
+        if (Input.GetButtonDown("Fire2"))
+        {
+            Barrido();
         }
     }
     private void Golpe() 
@@ -39,5 +45,20 @@ public class CombateCuerpoaCuerpo : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(controladorGolpe.position, RadioDeGolpe);
+        //Se crea el radio del atque, para un nuevo tipo de ataque  
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(controladorGolpe.position, RadioDeBarrido);
+    }
+    private void Barrido()
+    {
+        animator.SetTrigger("Barrido");
+        Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, RadioDeGolpe);
+        foreach (Collider2D colisionador in objetos)
+        {
+            if (colisionador.CompareTag("Enemigo"))
+            {
+                colisionador.transform.GetComponent<Enemigo>().TomarDaño(DañoBarrido);
+            }
+        }
     }
 }
