@@ -34,7 +34,7 @@ public class CombateCuerpoaCuerpo : MonoBehaviour
         {
             if (colisionador.CompareTag("Enemigo"))
             {
-                colisionador.transform.GetComponent<Enemigo>().TomarDaño(DañoBarrido);
+                colisionador.transform.GetComponent<Enemigo>().TomarDaño(DañoGolpe);
             }
         }
 
@@ -52,7 +52,7 @@ public class CombateCuerpoaCuerpo : MonoBehaviour
     private void Barrido()
     {
         animator.SetTrigger("Barrido");
-        Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, RadioDeGolpe);
+        Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, RadioDeBarrido);
         foreach (Collider2D colisionador in objetos)
         {
             if (colisionador.CompareTag("Enemigo"))

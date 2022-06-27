@@ -57,18 +57,11 @@ public class RoomSpawn : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        // 
-        //{
-
         if (!CompareTag("LB") || !CompareTag("TL") || !CompareTag("RB") || !CompareTag("RT"))
         {
             if (other.CompareTag("SpawnPoint")) { Destroy(gameObject); }
                  
-            } 
-                
-            
-        //}
-
+        } 
     }
 }
 
