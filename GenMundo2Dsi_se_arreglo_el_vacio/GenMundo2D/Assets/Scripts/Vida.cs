@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Vida : MonoBehaviour
 {
- 
+    private Jefe jefe;
     [SerializeField] private GameObject Barravida;
     [SerializeField] private GameObject moriste;
     private RoomTemplates templates;
@@ -23,7 +23,7 @@ public class Vida : MonoBehaviour
             Destroy(gameObject);
             Barravida.SetActive(false);
             moriste.SetActive(true);
-            
+            //jefe.Barravidaj.SetActive(false);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)

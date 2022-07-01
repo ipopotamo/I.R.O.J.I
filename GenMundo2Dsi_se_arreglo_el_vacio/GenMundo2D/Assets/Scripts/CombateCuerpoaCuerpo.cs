@@ -37,6 +37,13 @@ public class CombateCuerpoaCuerpo : MonoBehaviour
                 colisionador.transform.GetComponent<Enemigo>().TomarDaño(DañoGolpe);
             }
         }
+        foreach (Collider2D colisionador in objetos)
+        {
+            if (colisionador.CompareTag("Jefe"))
+            {
+                colisionador.transform.GetComponent<Jefe>().TomarDaño(DañoGolpe);
+            }
+        }
 
     }
 
@@ -58,6 +65,10 @@ public class CombateCuerpoaCuerpo : MonoBehaviour
             if (colisionador.CompareTag("Enemigo"))
             {
                 colisionador.transform.GetComponent<Enemigo>().TomarDaño(DañoBarrido);
+            }
+            if (colisionador.CompareTag("Jefe"))
+            {
+                colisionador.transform.GetComponent<Jefe>().TomarDaño(DañoBarrido);
             }
         }
     }
