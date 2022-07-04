@@ -101,7 +101,7 @@ MonoBehaviour:
   vida: 100
   VistadeGoyo: {fileID: 2317086828888729362}
   RadiodeVista: 5
-  Barravida: {fileID: 0}
+  Barravidaj: {fileID: 0}
   vidaSlider: {fileID: 0}
 --- !u!61 &8356964478209131202
 BoxCollider2D:

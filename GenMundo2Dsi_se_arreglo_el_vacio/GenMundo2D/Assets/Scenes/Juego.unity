@@ -1015,6 +1015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Barravida: {fileID: 2048601851}
+  BarravidaJefe: {fileID: 1531954666}
   moriste: {fileID: 1513781854}
   vidaSlider: {fileID: 2048601853}
 --- !u!95 &342978296
@@ -2284,7 +2285,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1427681718839332645, guid: 67f87805c01a63b4ca5637ab43b7b17b, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1427681718839332645, guid: 67f87805c01a63b4ca5637ab43b7b17b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5031,16 +5032,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1531954666}
     - target: {fileID: 58978542866231447, guid: eeb99cd5929a4eb4d98b7dd7e248fbdd, type: 3}
+      propertyPath: Barravidaj
+      value: 
+      objectReference: {fileID: 1531954666}
+    - target: {fileID: 58978542866231447, guid: eeb99cd5929a4eb4d98b7dd7e248fbdd, type: 3}
       propertyPath: vidaSlider
       value: 
       objectReference: {fileID: 1531954668}
+    - target: {fileID: 2247828256353775952, guid: eeb99cd5929a4eb4d98b7dd7e248fbdd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247828256353775952, guid: eeb99cd5929a4eb4d98b7dd7e248fbdd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3262281011615441093, guid: eeb99cd5929a4eb4d98b7dd7e248fbdd, type: 3}
       propertyPath: m_Name
       value: gojo jo 1
       objectReference: {fileID: 0}
     - target: {fileID: 8734458550593643565, guid: eeb99cd5929a4eb4d98b7dd7e248fbdd, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8734458550593643565, guid: eeb99cd5929a4eb4d98b7dd7e248fbdd, type: 3}
       propertyPath: m_LocalPosition.x

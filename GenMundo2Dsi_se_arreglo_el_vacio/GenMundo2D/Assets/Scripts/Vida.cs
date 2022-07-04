@@ -7,6 +7,7 @@ public class Vida : MonoBehaviour
 {
     private Jefe jefe;
     [SerializeField] private GameObject Barravida;
+    [SerializeField] private GameObject BarravidaJefe;
     [SerializeField] private GameObject moriste;
     private RoomTemplates templates;
     public Slider vidaSlider;
@@ -23,7 +24,7 @@ public class Vida : MonoBehaviour
             Destroy(gameObject);
             Barravida.SetActive(false);
             moriste.SetActive(true);
-            //jefe.Barravidaj.SetActive(false);
+            BarravidaJefe.SetActive(false);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
