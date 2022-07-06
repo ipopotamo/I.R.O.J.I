@@ -1949,7 +1949,7 @@ ScriptedImporter:
     uvTransform: {x: -303, y: 286}
   - name: gojo jo
     originalName: 
-    pivot: {x: 0.52997965, y: 0.20360883}
+    pivot: {x: 0.5645164, y: 0.443522}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:

@@ -15,6 +15,7 @@ TagManager:
   - Enemigo
   - Jefe
   - VistaJefe
+  - Juan
   layers:
   - Default
   - TransparentFX
