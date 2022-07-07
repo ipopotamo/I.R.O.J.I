@@ -5,18 +5,20 @@ using UnityEngine.UI;
 
 public class Vida : MonoBehaviour
 {
-    private Jefe jefe;
     [SerializeField] private GameObject Barravida;
     [SerializeField] private GameObject BarravidaJefe;
     [SerializeField] private GameObject moriste;
     private RoomTemplates templates;
+    //public float vida;
     public Slider vidaSlider;
+    private Jefe Jefe;
+
 
     private void Start()
     {
+       // vida = vidaSlider.value;
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
     }
-    
     private void Update()
     {
         if (vidaSlider.value == 0)
@@ -42,6 +44,14 @@ public class Vida : MonoBehaviour
         {
             vidaSlider.value += templates.RecuperaHP;
             Destroy(collision.gameObject);
+        }     
+    }
+    public void TomarDaño()
+    {
+        vidaSlider.value -= Jefe.daño;
+        if (vidaSlider.value <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 }

@@ -7,6 +7,7 @@ public class Jefe : MonoBehaviour
 {
     //parte de la vida 
     [SerializeField] private float vida;
+    [SerializeField] public float daño;
     [SerializeField] private Transform VistadeGoyo;
     [SerializeField] private float RadiodeVista;
     [SerializeField] private GameObject Barravidaj;
@@ -118,6 +119,25 @@ public class Jefe : MonoBehaviour
             }
         }
     }
+
+    public void Final_ani()
+    {
+        ani.SetBool("ataque 1", false);
+        atacando = false;
+        rango.GetComponent<BoxCollider2D>().enabled = true;
+
+    }
+
+    public void ColliderWeaponTrue()
+    {
+        Hit.GetComponent<BoxCollider2D>().enabled = true;    
+    }
+
+    public void ColliderWeaponFalse()
+    {
+        Hit.GetComponent<BoxCollider2D>().enabled = false;
+    }
+
     //Cuando juan le pega pierde vida y lo refleja en la barra 
     public void TomarDaño(float daño)
     {
