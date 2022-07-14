@@ -13,8 +13,6 @@ public class Jefe : MonoBehaviour
     public Slider vidaSlider;
     private Vida Juan;
 
-    private int juanito = 2;
-
     //Movimiento en la habitacion
     private Rigidbody2D jEFE;
     public int rutina;
@@ -91,28 +89,8 @@ public class Jefe : MonoBehaviour
                                     }
                                     break;
                                 }
-
-
-
                         }
-                    }
-
-
-
-
-            
-          
-
-
-        
-        
-        
-        
-        
-
-            
-            
-           
+                    }           
         else
         {
             if (Mathf.Abs(transform.position.x - objetivo.transform.position.x) > rango_ataque && !atacando)
