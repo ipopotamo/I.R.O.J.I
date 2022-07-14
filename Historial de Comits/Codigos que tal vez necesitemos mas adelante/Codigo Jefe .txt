@@ -162,3 +162,19 @@ public class RangoEnemigo : MonoBehaviour
         }
     }
 }
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+private void Ataca_a_juan()
+    {
+        Collider2D[] objetos = Physics2D.OverlapCircleAll(GolpeGoyo.position, Jefe.rango_ataque);
+        foreach (Collider2D colisionador in objetos)
+        {
+            if (colisionador.CompareTag("Juan"))
+            {
+                colisionador.transform.GetComponent<Vida>().TomarDaño(Jefe.daño);
+            }
+        }
+
+    }

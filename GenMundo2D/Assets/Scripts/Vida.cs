@@ -9,20 +9,22 @@ public class Vida : MonoBehaviour
     [SerializeField] private GameObject BarravidaJefe;
     [SerializeField] private GameObject moriste;
     private RoomTemplates templates;
-    //public float vida;
+    public float vida;
     public Slider vidaSlider;
     private Jefe Jefe;
 
 
     private void Start()
     {
-       // vida = vidaSlider.value;
+        vida = vidaSlider.value;
+        Time.timeScale = 1f;
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
     }
     private void Update()
     {
         if (vidaSlider.value == 0)
         {
+            Time.timeScale = 0f;
             Destroy(gameObject);
             Barravida.SetActive(false);
             moriste.SetActive(true);
@@ -46,12 +48,16 @@ public class Vida : MonoBehaviour
             Destroy(collision.gameObject);
         }     
     }
-    public void TomarDaño()
+    public void TomarDaño(float daño)
     {
-        vidaSlider.value -= Jefe.daño;
+        vidaSlider.value -= daño;
         if (vidaSlider.value <= 0)
         {
+            Time.timeScale = 0f;
             Destroy(gameObject);
+            Barravida.SetActive(false);
+            moriste.SetActive(true);
+            BarravidaJefe.SetActive(false);
         }
     }
 }

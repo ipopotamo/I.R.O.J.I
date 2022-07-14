@@ -14,7 +14,7 @@ public class RangoEnemigo : MonoBehaviour
             ani.SetBool("caminar", false);
             ani.SetBool("correr", false);
             ani.SetBool("ataque 1", true);
-            //jefe.atacando = true;
+            jefe.atacando = true;
             GetComponent<BoxCollider2D>().enabled = false;
         }
     }
