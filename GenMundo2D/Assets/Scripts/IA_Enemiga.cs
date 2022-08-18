@@ -29,6 +29,11 @@ public class IA_Enemiga : MonoBehaviour
 
     private void Update()
     {
-        //anime.SetBool
+        //anime.SetBool("Corriendo", IsinChaseRange);
+
+        IsinChaseRange = Physics2D.OverlapCircle(transform.position, checkradius, WhatIsPlayer); // Crea un circulo en representacion al radio de la vista    
+        IsinAttackRange = Physics2D.OverlapCircle(transform.position, RadioAtaque, WhatIsPlayer);// Crea un circulo en representacion al radio de ataque    
+
+        Direccion = objetivo.position - transform.position;
     }
 }

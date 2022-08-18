@@ -10,21 +10,23 @@ public class RoomSpawn : MonoBehaviour
     //3 = izquierda
     //4 = derecha
 
+
+    // Se llama al script que contiene listas donde se depositan las salas segun las salidas que tenga
     private RoomTemplates templates;
-    private int rand;
+    private int rand; // una variable para que hacer una seleccion aleatoria.
     private bool spawned = false;
     public int id;
 
     void Start()
     {
-        templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
-        Invoke("Spawn", 0.1f);
+        templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>(); //hago que busque y encuentre al objeto dentro del juego 
+        Invoke("Spawn", 0.1f); // invoca las salas
     }
     void Spawn()
     {
         if (spawned == false)
         {
-            if (openSide == 1)
+            if (openSide == 1) // si la abertura es de id 1 invoca salas abajo
             {
                 //Necesita una sala abajo
                 rand = Random.Range(0, templates.SalidaBAja.Length);
@@ -48,14 +50,14 @@ public class RoomSpawn : MonoBehaviour
                 rand = Random.Range(0, templates.SalidaDerecha.Length);
                 Instantiate(templates.SalidaDerecha[rand], transform.position, templates.SalidaDerecha[rand].transform.rotation);
             }
-            id = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>().id;
+            id = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>().id; // me da miedo borrar lo que hizo brumer
             GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>().id++;
             //Debug.Log(id);
             spawned = true;
         }
 
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) // evita el bug del vacio
     {
         if (!CompareTag("LB") || !CompareTag("TL") || !CompareTag("RB") || !CompareTag("RT"))
         {

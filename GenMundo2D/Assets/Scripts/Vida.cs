@@ -5,56 +5,57 @@ using UnityEngine.UI;
 
 public class Vida : MonoBehaviour
 {
-    [SerializeField] private GameObject Barravida;
+    [SerializeField] private GameObject Barravida; //Estas 3 variables se asignan un objeto dentro del juego
     [SerializeField] private GameObject BarravidaJefe;
     [SerializeField] private GameObject moriste;
+    [SerializeField] private GameObject jUAN;
     private RoomTemplates templates;
-    public float vida;
-    public Slider vidaSlider;
+    public float vida; // Valor de la vida de JUAN y solo Juan 
+    public Slider vidaSlider; //vida de juan pero en barra
     private Jefe Jefe;
 
 
     private void Start()
     {
-        vida = vidaSlider.value;
-        Time.timeScale = 1f;
+        vida = vidaSlider.value; // refleja el valor de la vida en su respectiva barra 
+        Time.timeScale = 1f; //reanuda el tiempo despues de muertos o al aparecer
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
     }
-    private void Update()
+    private void Update() 
     {
-        if (vidaSlider.value == 0)
+        if (vidaSlider.value == 0) //Pregunta si la vida de juan es == 0
         {
-            Time.timeScale = 0f;
-            Destroy(gameObject);
-            Barravida.SetActive(false);
-            moriste.SetActive(true);
-            BarravidaJefe.SetActive(false);
+            Time.timeScale = 0f; //se frena el tiempo
+            jUAN.SetActive(false);// se destruye el cuerpo de Juan
+            Barravida.SetActive(false); //Desactiva la barra para que no sea visible 
+            moriste.SetActive(true); //Activa el cartel de Moriste con los botones para de volver, revivir, etc
+            BarravidaJefe.SetActive(false); // se borra la barra del Jefe
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Fuego")
         {
-            vidaSlider.value -= templates.Dañofuego;
+            vidaSlider.value -= templates.Dañofuego; // El fuego hace daño
              
         }
         if (collision.gameObject.tag == "VistaJefe")
         {
-            BarravidaJefe.SetActive(true);
+            BarravidaJefe.SetActive(true); //Esto aun no funciona pero deberia activar la barra de vida del Jefe al entrar en la sala
         }
         if (collision.gameObject.tag == "Mas_Vida")
         {
-            vidaSlider.value += templates.RecuperaHP;
+            vidaSlider.value += templates.RecuperaHP; // Recupera vida con la milanga, 
             Destroy(collision.gameObject);
         }     
     }
-    public void TomarDaño(float daño)
+    public void TomarDaño(float daño) //Cuando le pegan a Juan El recibe daño
     {
         vidaSlider.value -= daño;
         if (vidaSlider.value <= 0)
         {
             Time.timeScale = 0f;
-            Destroy(gameObject);
+            jUAN.SetActive(false);
             Barravida.SetActive(false);
             moriste.SetActive(true);
             BarravidaJefe.SetActive(false);
