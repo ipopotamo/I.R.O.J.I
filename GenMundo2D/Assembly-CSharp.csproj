@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Enemigos_Petes.cs" />
     <Compile Include="Assets\Scripts\movimiento.cs" />
     <Compile Include="Assets\Scripts\CombateCuerpoaCuerpo.cs" />
     <Compile Include="Assets\Scripts\CamaraControl.cs" />
@@ -68,17 +69,13 @@
     <Compile Include="Assets\Scripts\HitJefe.cs" />
     <Compile Include="Assets\Scripts\RangoEnemigo.cs" />
     <Compile Include="Assets\Scripts\Controlador.cs" />
+    <Compile Include="Assets\Scripts\Enemigo_bot.cs" />
     <Compile Include="Assets\Scripts\IA_Enemiga.cs" />
     <Compile Include="Assets\Scripts\AgregarALista.cs" />
     <Compile Include="Assets\Scripts\Disparar.cs" />
     <Compile Include="Assets\Scripts\PausaControlador.cs" />
     <Compile Include="Assets\Scripts\CambioDeRotacion.cs" />
     <Compile Include="Assets\Scripts\Vida.cs" />
-<<<<<<< HEAD
-    <Compile Include="Assets\Scripts\Enemigo_bot.cs" />
-    <Compile Include="Assets\Scripts\Enemigos_Petes.cs" />
-=======
->>>>>>> dc299df871ab896798c56191866792cf118267c4
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DeepSpaceSkyboxPack\GalaxyFire\Galaxy Fire Skybox Readme.txt" />
