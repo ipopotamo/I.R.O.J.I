@@ -41,7 +41,7 @@ public class CombateCuerpoaCuerpo : MonoBehaviour
         {
             if (colisionador.CompareTag("Jefe"))
             {
-                colisionador.transform.GetComponent<Jefe>().TomarDaño(DañoGolpe);
+                colisionador.transform.GetComponent<IA_Enemiga>().TomarDaño(DañoGolpe);
             }
         }
 
@@ -68,7 +68,7 @@ public class CombateCuerpoaCuerpo : MonoBehaviour
             }
             if (colisionador.CompareTag("Jefe"))
             {
-                colisionador.transform.GetComponent<Jefe>().TomarDaño(DañoBarrido);
+                colisionador.transform.GetComponent<IA_Enemiga>().TomarDaño(DañoBarrido);
             }
         }
     }

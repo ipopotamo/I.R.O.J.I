@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class IA_Enemiga : MonoBehaviour
 {
@@ -21,6 +22,10 @@ public class IA_Enemiga : MonoBehaviour
     private bool isInChaseRange;
     private bool isInAttackRange;
 
+
+    [SerializeField] private float vida;
+    [SerializeField] private GameObject Barravidaj;
+    public Slider vidaSlider;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -31,7 +36,7 @@ public class IA_Enemiga : MonoBehaviour
 
     private void Update()
     {
-        //anime.SetBool("Corriendo", IsinChaseRange);
+        //animacion.SetBool("Corriendo", isInChaseRange);
 
         isInChaseRange = Physics2D.OverlapCircle(transform.position, checkradius, WhatIsPlayer); // Crea un circulo en representacion al radio de la vista    
         isInAttackRange = Physics2D.OverlapCircle(transform.position, RadioAtaque, WhatIsPlayer);// Crea un circulo en representacion al radio de ataque    
@@ -67,4 +72,15 @@ public class IA_Enemiga : MonoBehaviour
     }
 
     // El tutorial acaba aca solo falta que nos ataque y baje vida, quiza con agregarle el arma, hacer que esta nos siga y hacer la animacion ya estamos
+    public void TomarDaño(float daño)
+    {
+        vida = vida - daño;
+        if (vida <= 0)
+        {
+            Destroy(gameObject);
+            Barravidaj.SetActive(false);
+        }
+        vidaSlider.value = vida;
+    }
+
 }
