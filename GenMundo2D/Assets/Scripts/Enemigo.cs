@@ -7,9 +7,9 @@ public class Enemigo : MonoBehaviour
     [SerializeField] private float vida;
 
 
-    public void TomarDaño(float daño)
+    public void TomarDaÃ±o(float daÃ±o)
     {
-        vida -= daño;
+        vida -= daÃ±o;
         if (vida <= 0)
         {
             Destroy(gameObject);

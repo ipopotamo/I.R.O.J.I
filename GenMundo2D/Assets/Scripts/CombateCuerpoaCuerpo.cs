@@ -7,8 +7,8 @@ public class CombateCuerpoaCuerpo : MonoBehaviour
     [SerializeField] private Transform controladorGolpe;
     [SerializeField] private float RadioDeGolpe;
     [SerializeField] private float RadioDeBarrido;
-    [SerializeField] private float DañoGolpe;
-    [SerializeField] private float DañoBarrido;
+    [SerializeField] private float DaÃ±oGolpe;
+    [SerializeField] private float DaÃ±oBarrido;
     private Animator animator;
 
     private void Start()
@@ -34,14 +34,14 @@ public class CombateCuerpoaCuerpo : MonoBehaviour
         {
             if (colisionador.CompareTag("Enemigo"))
             {
-                colisionador.transform.GetComponent<Enemigo>().TomarDaño(DañoGolpe);
+                colisionador.transform.GetComponent<Enemigo>().TomarDaÃ±o(DaÃ±oGolpe);
             }
         }
         foreach (Collider2D colisionador in objetos)
         {
             if (colisionador.CompareTag("Jefe"))
             {
-                colisionador.transform.GetComponent<IA_Enemiga>().TomarDaño(DañoGolpe);
+                
             }
         }
 
@@ -64,11 +64,11 @@ public class CombateCuerpoaCuerpo : MonoBehaviour
         {
             if (colisionador.CompareTag("Enemigo"))
             {
-                colisionador.transform.GetComponent<Enemigo>().TomarDaño(DañoBarrido);
+                colisionador.transform.GetComponent<Enemigo>().TomarDaÃ±o(DaÃ±oBarrido);
             }
             if (colisionador.CompareTag("Jefe"))
             {
-                colisionador.transform.GetComponent<IA_Enemiga>().TomarDaño(DañoBarrido);
+                
             }
         }
     }
