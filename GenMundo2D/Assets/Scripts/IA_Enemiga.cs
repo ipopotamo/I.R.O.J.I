@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class IA_Enemiga : MonoBehaviour
 {
+    
     public float velocidad;
     public float checkradius; // Determina cuando empieza a perseguir al jugador
     public float RadioAtaque; // Determina cuando ataca al jugador
@@ -30,6 +31,7 @@ public class IA_Enemiga : MonoBehaviour
 
         objetivo = GameObject.FindWithTag("Juan").transform;
     }
+
 
     private void Update()
     {
@@ -57,11 +59,13 @@ public class IA_Enemiga : MonoBehaviour
     {
         if (isInChaseRange && !isInAttackRange) 
         {
-            MoveCharacter(movimiento); 
+            MoveCharacter(movimiento);
+            animacion.SetBool("Ataque", isInAttackRange); 
         }
         if (isInAttackRange)
         {
-            rb.velocity = Vector2.zero;
+            //rb.velocity = Vector2.zero;
+            animacion.SetBool("Ataque", isInAttackRange);
         }
     }
 
@@ -69,6 +73,5 @@ public class IA_Enemiga : MonoBehaviour
     {
         rb.MovePosition((Vector2)transform.position + (Direccion * velocidad * Time.deltaTime));
     }
-
 
 }

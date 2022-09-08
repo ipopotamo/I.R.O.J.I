@@ -46,6 +46,7 @@ public class CombateCuerpoaCuerpo : MonoBehaviour
         }
 
     }
+    
 
     //Se crea el radio del atque
     private void OnDrawGizmos()
