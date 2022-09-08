@@ -50,9 +50,7 @@ public class RoomSpawn : MonoBehaviour
                 rand = Random.Range(0, templates.SalidaDerecha.Length);
                 Instantiate(templates.SalidaDerecha[rand], transform.position, templates.SalidaDerecha[rand].transform.rotation);
             }
-            id = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>().id; // me da miedo borrar lo que hizo brumer
-            GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>().id++;
-            //Debug.Log(id);
+           
             spawned = true;
         }
 
