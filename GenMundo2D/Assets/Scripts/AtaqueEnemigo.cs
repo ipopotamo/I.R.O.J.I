@@ -5,16 +5,15 @@ using UnityEngine;
 public class AtaqueEnemigo : MonoBehaviour
 {
     [SerializeField] private GameObject ControlEnemigo;
-    [SerializeField] private float dano;
+    [SerializeField] private float daño;
     public float rango;
     private IA_Enemiga Enemigo;
-    
-     
-     void Update()
-     {
+
+    private void Update()
+    {
         //Enemigo.RadioAtaque = rango;
-        Ataque();
-     }
+       Ataque();
+    }
      
      
      private void Ataque() 
@@ -24,7 +23,7 @@ public class AtaqueEnemigo : MonoBehaviour
         {
             if (colisionador.CompareTag("Juan"))
             {
-                colisionador.transform.GetComponent<Vida>().TomarDaño(dano);
+                colisionador.transform.GetComponent<Vida>().TomarDaño(daño);
             }
         }
     }

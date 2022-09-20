@@ -5,7 +5,10 @@ using UnityEngine.UI;
 
 public class IA_Enemiga : MonoBehaviour
 {
-    
+    [SerializeField] private GameObject ControlEnemigo;
+    [SerializeField] private float daño;
+    public float rango;
+
     public float velocidad;
     public float checkradius; // Determina cuando empieza a perseguir al jugador
     public float RadioAtaque; // Determina cuando ataca al jugador
@@ -23,6 +26,9 @@ public class IA_Enemiga : MonoBehaviour
     private bool isInChaseRange;
     private bool isInAttackRange;
 
+    [SerializeField] private float tiempoEntreAtaques;
+    [SerializeField] private float tiempoSiguienteAtaque;
+
 
     private void Start()
     {
@@ -35,6 +41,11 @@ public class IA_Enemiga : MonoBehaviour
 
     private void Update()
     {
+        if (tiempoSiguienteAtaque > 0) 
+        {
+            tiempoSiguienteAtaque -= Time.deltaTime;
+        }
+
         animacion.SetBool("Corriendo", isInChaseRange);
 
         isInChaseRange = Physics2D.OverlapCircle(transform.position, checkradius, WhatIsPlayer); // Crea un circulo en representacion al radio de la vista    
@@ -60,18 +71,37 @@ public class IA_Enemiga : MonoBehaviour
         if (isInChaseRange && !isInAttackRange) 
         {
             MoveCharacter(movimiento);
-            animacion.SetBool("Ataque", isInAttackRange); 
+            animacion.SetBool("Ataque", isInAttackRange);
         }
-        if (isInAttackRange)
+        if (isInAttackRange && tiempoSiguienteAtaque<=0)
         {
             //rb.velocity = Vector2.zero;
             animacion.SetBool("Ataque", isInAttackRange);
+            Ataque();
+            tiempoSiguienteAtaque = tiempoEntreAtaques;
+            Debug.Log("Atacando");
         }
     }
 
     private void MoveCharacter(Vector2 Direccion)
     {
         rb.MovePosition((Vector2)transform.position + (Direccion * velocidad * Time.deltaTime));
+    }
+    private void Ataque()
+    {
+        Collider2D[] objetos = Physics2D.OverlapCircleAll(ControlEnemigo.transform.position, rango);
+        foreach (Collider2D colisionador in objetos)
+        {
+            if (colisionador.CompareTag("Juan"))
+            {
+                colisionador.transform.GetComponent<Vida>().TomarDaño(daño);
+            }
+        }
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(ControlEnemigo.transform.position, rango);
     }
 
 }

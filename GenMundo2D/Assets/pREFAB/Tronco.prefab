@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1323468012680039652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7231265032186077478}
+  m_Layer: 0
+  m_Name: ControlAtaqueEnemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7231265032186077478
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323468012680039652}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.01, y: -0.04, z: 0}
+  m_LocalScale: {x: 2.6886542, y: 2.2177722, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5314835406633848872}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5314835406633848877
 GameObject:
   m_ObjectHideFlags: 0
@@ -33,7 +63,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.3609, y: 1.2981, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 7231265032186077478}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -156,6 +187,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4502098a170c7b54b9a219972d7768a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ControlEnemigo: {fileID: 1323468012680039652}
+  "da\xF1o": 5
+  rango: 1
   velocidad: 1
   checkradius: 10
   RadioAtaque: 1
@@ -164,6 +198,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   Direccion: {x: 0, y: 0, z: 0}
+  tiempoEntreAtaques: 1
+  tiempoSiguienteAtaque: 0
 --- !u!61 &5314835406633848868
 BoxCollider2D:
   m_ObjectHideFlags: 0
