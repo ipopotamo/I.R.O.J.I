@@ -7,7 +7,7 @@ public class IA_Enemiga : MonoBehaviour
 {
     [SerializeField] private GameObject ControlEnemigo;
     [SerializeField] private float daño;
-    public float rango;
+    //public float rango;
 
     public float velocidad;
     public float checkradius; // Determina cuando empieza a perseguir al jugador
@@ -89,7 +89,7 @@ public class IA_Enemiga : MonoBehaviour
     }
     private void Ataque()
     {
-        Collider2D[] objetos = Physics2D.OverlapCircleAll(ControlEnemigo.transform.position, rango);
+        Collider2D[] objetos = Physics2D.OverlapCircleAll(ControlEnemigo.transform.position, RadioAtaque);
         foreach (Collider2D colisionador in objetos)
         {
             if (colisionador.CompareTag("Juan"))
@@ -101,7 +101,10 @@ public class IA_Enemiga : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(ControlEnemigo.transform.position, rango);
+        Gizmos.DrawWireSphere(ControlEnemigo.transform.position, RadioAtaque);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(ControlEnemigo.transform.position, checkradius);
     }
 
 }
