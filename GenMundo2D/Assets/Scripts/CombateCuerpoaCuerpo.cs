@@ -11,19 +11,28 @@ public class CombateCuerpoaCuerpo : MonoBehaviour
     [SerializeField] private float DañoBarrido;
     private Animator animator;
 
+    [SerializeField] private float tiempoEntreAtaques;
+    [SerializeField] private float tiempoSiguienteAtaque;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
     }
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (tiempoSiguienteAtaque>0)
+        {
+            tiempoSiguienteAtaque -= Time.deltaTime;
+        }        
+        if (Input.GetButtonDown("Fire1") && tiempoSiguienteAtaque <= 0)
         {
             Golpe();
+            tiempoSiguienteAtaque = tiempoEntreAtaques;
         }
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Fire2") && tiempoSiguienteAtaque <= 0)
         {
             Barrido();
+            tiempoSiguienteAtaque = tiempoEntreAtaques;
         }
     }
     private void Golpe() 

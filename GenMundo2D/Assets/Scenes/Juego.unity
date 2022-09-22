@@ -1273,7 +1273,7 @@ MonoBehaviour:
   BarravidaJefe: {fileID: 1531954666}
   moriste: {fileID: 1513781854}
   jUAN: {fileID: 342978289}
-  vida: 100000
+  vida: 100
   vidaSlider: {fileID: 2048601853}
 --- !u!95 &342978296
 Animator:
@@ -1311,6 +1311,8 @@ MonoBehaviour:
   RadioDeBarrido: 1
   "Da\xF1oGolpe": 10
   "Da\xF1oBarrido": 20
+  tiempoEntreAtaques: 2
+  tiempoSiguienteAtaque: 0
 --- !u!114 &342978298
 MonoBehaviour:
   m_ObjectHideFlags: 0
