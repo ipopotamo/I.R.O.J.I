@@ -12,7 +12,7 @@ public class Vida : MonoBehaviour
     private RoomTemplates templates;
     public float vida; // Valor de la vida de JUAN y solo Juan 
     public Slider vidaSlider; //vida de juan pero en barra
-    private Jefe Jefe;
+    
 
 
     private void Start()

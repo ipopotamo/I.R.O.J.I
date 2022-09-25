@@ -1,0 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AumentoDeStats : MonoBehaviour
+{
+    public movimiento movimiento;
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Juan")
+        {
+            movimiento.velo += 5;
+            Debug.Log("cebando");
+            Destroy(gameObject);
+        }
+    }
+}

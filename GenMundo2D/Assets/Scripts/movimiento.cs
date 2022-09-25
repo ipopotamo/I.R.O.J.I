@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class movimiento : MonoBehaviour
 {
-    [SerializeField]private float velo = 2f;
+    [SerializeField]public float velo = 2f;
 
     private Rigidbody2D jugador;
     private Vector2 movi;
