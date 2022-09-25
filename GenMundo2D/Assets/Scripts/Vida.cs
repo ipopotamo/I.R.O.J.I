@@ -10,7 +10,7 @@ public class Vida : MonoBehaviour
     [SerializeField] private GameObject moriste;
     [SerializeField] private GameObject jUAN;
     private RoomTemplates templates;
-    public float vida; // Valor de la vida de JUAN y solo Juan 
+    public float vida; // Valor de la vida de JUAN  
     public Slider vidaSlider; //vida de juan pero en barra
     
 
@@ -36,7 +36,7 @@ public class Vida : MonoBehaviour
     {
         if (collision.gameObject.tag == "Fuego")
         {
-            vidaSlider.value -= templates.Dañofuego; // El fuego hace daño
+            vidaSlider.value -= templates.Daï¿½ofuego; // El fuego hace daï¿½o
              
         }
         if (collision.gameObject.tag == "VistaJefe")
@@ -49,9 +49,9 @@ public class Vida : MonoBehaviour
             Destroy(collision.gameObject);
         }     
     }
-    public void TomarDaño(float daño) //Cuando le pegan a Juan El recibe daño
+    public void TomarDaï¿½o(float daï¿½o) //Cuando le pegan a Juan El recibe daï¿½o
     {
-        vidaSlider.value -= daño;
+        vidaSlider.value -= daï¿½o;
         if (vidaSlider.value <= 0)
         {
             Time.timeScale = 0f;

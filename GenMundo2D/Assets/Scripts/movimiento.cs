@@ -9,6 +9,7 @@ public class movimiento : MonoBehaviour
     private Rigidbody2D jugador;
     private Vector2 movi;
     private Animator PlayerAnimator;
+    public Vector2 Movi;
 
     void Start()
     {
