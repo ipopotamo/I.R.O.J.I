@@ -36,7 +36,7 @@ public class Vida : MonoBehaviour
     {
         if (collision.gameObject.tag == "Fuego")
         {
-            vidaSlider.value -= templates.Da�ofuego; // El fuego hace da�o
+            vidaSlider.value -= templates.Dañofuego; // El fuego hace da�o
              
         }
         if (collision.gameObject.tag == "VistaJefe")
@@ -49,9 +49,9 @@ public class Vida : MonoBehaviour
             Destroy(collision.gameObject);
         }     
     }
-    public void TomarDa�o(float da�o) //Cuando le pegan a Juan El recibe da�o
+    public void TomarDaño(float daño) //Cuando le pegan a Juan El recibe da�o
     {
-        vidaSlider.value -= da�o;
+        vidaSlider.value -= daño;
         if (vidaSlider.value <= 0)
         {
             Time.timeScale = 0f;
