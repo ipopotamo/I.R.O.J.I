@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ControlEnemigo: {fileID: 3174905697800638185}
-  "da\xF1o": 20
+  "da\xF1o": 10
   velocidad: 2
   checkradius: 5
   RadioAtaque: 2

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AumentoDeStats : MonoBehaviour
 {
-    public movimiento movimiento;
+    [SerializeField] public movimiento movimiento;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Juan")

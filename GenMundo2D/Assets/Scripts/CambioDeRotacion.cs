@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CambioDeRotacion : MonoBehaviour
 {
-    private Vector2 objetivo;
+    public Vector2 objetivo;
 
 
     //[SerializeField] private Disparar ProyectilPrefab;

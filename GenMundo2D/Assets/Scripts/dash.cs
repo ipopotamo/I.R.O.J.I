@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;o
+using UnityEngine;
 
 public class dash : MonoBehaviour
 {
@@ -8,9 +8,9 @@ public class dash : MonoBehaviour
     private Rigidbody2D rb;
     private CambioDeRotacion mov; 
     private float grav;
-      
 
-    
+    [SerializeField] GameObject Juan;
+
     [SerializeField] private float T_dash = 0.2f;
     [SerializeField] private float F_dash = 20f;
     [SerializeField] private float C_dash = 1;
@@ -27,7 +27,7 @@ public class dash : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.f)){
+        if(Input.GetKeyDown(KeyCode.F)){
            StartCoroutine(Dash());     
         }
     }
@@ -36,10 +36,10 @@ public class dash : MonoBehaviour
     {
         if_dash = true;
         P_dash = false;
-        rb.Velocity = new Vector2(mov.objetivo * F_dash, mov.objetivo * F_dash);
+        rb.velocity = new Vector2(Juan.transform.position.x * F_dash, Juan.transform.position.y*F_dash);
         yield return new WaitForSeconds(T_dash);
         if_dash = false;
-        rb.gravityScale = grav;
+        //rb.gravityScale = grav;
         yield return new WaitForSeconds(T_dash);
         P_dash = true;
 
