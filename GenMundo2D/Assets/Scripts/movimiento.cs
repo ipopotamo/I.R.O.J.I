@@ -11,6 +11,8 @@ public class movimiento : MonoBehaviour
     private Animator PlayerAnimator;
     public Vector2 Movi;
 
+    private RoomTemplates templates;
+
     void Start()
     {
         jugador = GetComponent<Rigidbody2D>();
@@ -34,4 +36,5 @@ public class movimiento : MonoBehaviour
     {
         jugador.MovePosition(jugador.position + movi * velo * Time.fixedDeltaTime);
     }
+
 }
