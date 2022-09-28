@@ -9,7 +9,15 @@ public class movimiento : MonoBehaviour
     private Rigidbody2D jugador;
     private Vector2 movi;
     private Animator PlayerAnimator;
-    public Vector2 Movi;
+    
+    private float activeMoveSpeed;
+    public  float dashSpeed;
+
+    public float dashLength  = .5f;
+    public float recargaDash = 1f;
+
+    private float dasCounter;
+    private float dashCoolCounter;
 
     private RoomTemplates templates;
 
@@ -17,6 +25,7 @@ public class movimiento : MonoBehaviour
     {
         jugador = GetComponent<Rigidbody2D>();
         PlayerAnimator = GetComponent<Animator>();
+        activeMoveSpeed = velo;
     }
 
     // Update is called once per frame
@@ -30,6 +39,26 @@ public class movimiento : MonoBehaviour
         PlayerAnimator.SetFloat("Vertical", movY);
         PlayerAnimator.SetFloat("Velocidad", movi.magnitude);
 
+        
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            activeMoveSpeed = dashSpeed;
+            dasCounter = dashLength;
+        }
+        if(dasCounter > 0)
+        {
+            dasCounter -= Time.deltaTime;
+
+            if(dasCounter <= 0){
+                activeMoveSpeed = velo;
+                dasCounter = recargaDash;
+            }            
+        }
+        if(dashCoolCounter > 0){
+           dashCoolCounter -= Time.deltaTime;
+        }
+        
     }
 
     private void FixedUpdate()
