@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4731794857179394806}
   - component: {fileID: 4731794857179394801}
   - component: {fileID: 4731794857179394803}
-  - component: {fileID: 593948961}
   m_Layer: 0
   m_Name: Mate
   m_TagString: Mate
@@ -110,16 +109,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8830905, y: 3.8780038}
   m_EdgeRadius: 0
---- !u!114 &593948961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4731794857179394802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 217e161e682334f4981ecc930077c900, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movimiento: {fileID: 6224070933198189552, guid: 5896a605b968b6a4b969234e8cad8d0e, type: 3}

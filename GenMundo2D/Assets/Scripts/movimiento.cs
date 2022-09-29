@@ -13,7 +13,8 @@ public class movimiento : MonoBehaviour
     private float veloDash = 5f;
     [SerializeField]private float limitDash;
     [SerializeField]private float sigDash;
-    
+
+    private bool Dasheando;
 
     private RoomTemplates templates;
 
@@ -33,18 +34,16 @@ public class movimiento : MonoBehaviour
    
         PlayerAnimator.SetFloat("Horizontal", movX);
         PlayerAnimator.SetFloat("Vertical", movY);
-        PlayerAnimator.SetFloat("Velocidad", movi.magnitude);
-
-        
+        PlayerAnimator.SetFloat("Velocidad", movi.magnitude);       
 
         if(sigDash > 0){
-            sigDash -= Time.deltaTime;
-           
+            sigDash -= Time.deltaTime;           
         }
         if(Input.GetKeyDown(KeyCode.Space) && sigDash <= 0)
         {
-           sigDash = limitDash;
-           velo = velo * veloDash;
+            PlayerAnimator.SetBool("Dash", Dasheando);
+            sigDash = limitDash;
+            velo = velo * veloDash;
         }
      
     }
@@ -53,11 +52,22 @@ public class movimiento : MonoBehaviour
     {
         jugador.MovePosition(jugador.position + movi * velo * Time.fixedDeltaTime);     
              
-            if(sigDash <= 0 && velo >= 25f){
+            if(sigDash <= 0 && velo >= 25f)
+            {
               velo = 5f;
               jugador.MovePosition(jugador.position + movi * velo * Time.fixedDeltaTime);      
             }              
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Mate")
+        {
+            velo += 5;
+            Debug.Log("cebando");
+            Destroy(collision.gameObject);
+        }
     }
 
 }

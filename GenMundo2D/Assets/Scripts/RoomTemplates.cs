@@ -10,6 +10,8 @@ public class RoomTemplates : MonoBehaviour
     public GameObject[] SalidaDerecha;
     public GameObject[] SalidaIzquierda;
 
+    private int rand;
+
 
     // Muestra Los daños recibidos por entornos y recuperacion
     public float Dañofuego = 0;
@@ -22,14 +24,20 @@ public class RoomTemplates : MonoBehaviour
     public List<GameObject> rooms; // lista de salas generadas para saber donde spawnea goyo
 
     public GameObject boss; //Establecemo el jefe del piso, pueden ser varios si lo hacemos igual que las SALIDAS
-
+    public GameObject[] items;
     private void Start() //Invoca el metodo para aparecer al jefe del piso
     {
         Invoke("SpawnBoss", 3f);
+        Invoke("SpawnItem", 2f);
     }
     void SpawnBoss()//Establece que el jefe saldra en la ultima sala generada, osea la sala mas lejana
     {
         Instantiate(boss, rooms[rooms.Count - 1].transform.position, Quaternion.Euler(5,-1,0));
     }
 
+    void SpawnItem()//Establece que el jefe saldra en la ultima sala generada, osea la sala mas lejana
+    {
+        rand = Random.Range(0, items.Length);
+        Instantiate(items[rand], rooms[rand].transform.position, Quaternion.Euler(5, -1, 0));
+    }
 }
