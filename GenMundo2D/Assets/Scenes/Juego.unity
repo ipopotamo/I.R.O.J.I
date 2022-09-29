@@ -2610,7 +2610,6 @@ GameObject:
   - component: {fileID: 838090561}
   - component: {fileID: 838090560}
   - component: {fileID: 838090559}
-  - component: {fileID: 838090564}
   - component: {fileID: 838090565}
   - component: {fileID: 838090566}
   m_Layer: 5
@@ -2718,20 +2717,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &838090564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 838090558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4c175beca7b3374ab5edb41f4c81361, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velo: 2
-  Movi: {x: 0, y: 0}
 --- !u!50 &838090565
 Rigidbody2D:
   serializedVersion: 4
@@ -6443,6 +6428,10 @@ PrefabInstance:
       propertyPath: velo
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6224070933198189552, guid: 5896a605b968b6a4b969234e8cad8d0e, type: 3}
+      propertyPath: limitDash
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 6224070933198189555, guid: 5896a605b968b6a4b969234e8cad8d0e, type: 3}
       propertyPath: m_Name
       value: Juan
@@ -6511,10 +6500,6 @@ PrefabInstance:
       propertyPath: Camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 6224070933198189561, guid: 5896a605b968b6a4b969234e8cad8d0e, type: 3}
-      propertyPath: Juan
-      value: 
-      objectReference: {fileID: 519420028}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5896a605b968b6a4b969234e8cad8d0e, type: 3}
 --- !u!1001 &7263621278449013877

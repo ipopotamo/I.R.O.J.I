@@ -4,20 +4,16 @@ using UnityEngine;
 
 public class movimiento : MonoBehaviour
 {
-    [SerializeField]public float velo = 2f;
-
+    [SerializeField]public float velonormal = 5f;
+    [SerializeField]public float velo = 5f;
     private Rigidbody2D jugador;
     private Vector2 movi;
     private Animator PlayerAnimator;
     
-    private float activeMoveSpeed;
-    public  float dashSpeed;
-
-    public float dashLength  = .5f;
-    public float recargaDash = 1f;
-
-    private float dasCounter;
-    private float dashCoolCounter;
+    private float veloDash = 5f;
+    [SerializeField]private float limitDash;
+    [SerializeField]private float sigDash;
+    
 
     private RoomTemplates templates;
 
@@ -25,7 +21,7 @@ public class movimiento : MonoBehaviour
     {
         jugador = GetComponent<Rigidbody2D>();
         PlayerAnimator = GetComponent<Animator>();
-        activeMoveSpeed = velo;
+
     }
 
     // Update is called once per frame
@@ -43,27 +39,27 @@ public class movimiento : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            activeMoveSpeed = dashSpeed;
-            dasCounter = dashLength;
+           if(sigDash > 0){
+                sigDash -= Time.deltaTime;
+                velo = velonormal;
+           }         
+         if(sigDash <= 0){
+            sigDash = limitDash;
+            velo = velo * veloDash;
+         }        
+           
         }
-        if(dasCounter > 0)
-        {
-            dasCounter -= Time.deltaTime;
-
-            if(dasCounter <= 0){
-                activeMoveSpeed = velo;
-                dasCounter = recargaDash;
-            }            
-        }
-        if(dashCoolCounter > 0){
-           dashCoolCounter -= Time.deltaTime;
-        }
-        
+       
+    
     }
 
     private void FixedUpdate()
     {
-        jugador.MovePosition(jugador.position + movi * velo * Time.fixedDeltaTime);
+        
+            jugador.MovePosition(jugador.position + movi * velonormal * Time.fixedDeltaTime);
+              
+        
+
     }
 
 }

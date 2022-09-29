@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 6224070933198189562}
   - component: {fileID: 6224070933198189563}
   - component: {fileID: 6224070933198189560}
-  - component: {fileID: 6224070933198189561}
   m_Layer: 6
   m_Name: Juan
   m_TagString: Juan
@@ -104,7 +103,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velo: 5
-  Movi: {x: 0, y: 0}
 --- !u!50 &6224070933198189559
 Rigidbody2D:
   serializedVersion: 4
@@ -222,22 +220,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetivo: {x: 0, y: 0}
   Camera: {fileID: 0}
---- !u!114 &6224070933198189561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6224070933198189555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9eac1a4f236f3547a5cbcc2e5e5a920, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Juan: {fileID: 0}
-  T_dash: 0.2
-  F_dash: 20
-  C_dash: 1
 --- !u!1 &6224070933638834912
 GameObject:
   m_ObjectHideFlags: 0
