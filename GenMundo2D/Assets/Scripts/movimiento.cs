@@ -41,7 +41,7 @@ public class movimiento : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.Space) && sigDash <= 0)
         {
-            PlayerAnimator.SetBool("Dash", Dasheando);
+            PlayerAnimator.SetTrigger("dash");
             sigDash = limitDash;
             velo = velo * veloDash;
         }
