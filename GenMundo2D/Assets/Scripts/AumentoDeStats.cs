@@ -9,7 +9,7 @@ public class AumentoDeStats : MonoBehaviour
     {
         if (collision.gameObject.tag == "Juan")
         {
-            movimiento.velonormal += 5;
+            movimiento.velo += 5;
             Debug.Log("cebando");
             Destroy(gameObject);
         }
