@@ -43,13 +43,11 @@ public class movimiento : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && sigDash <= 0 && cantDash > 0)
         {
            sigDash = limitDash;
+           PlayerAnimator.SetTrigger("dash");
            velo = velo * veloDash;
-            cantDash--;
+           cantDash--;
         }
-          
-        
-        
-     
+         
     } 
     
 
@@ -64,15 +62,14 @@ public class movimiento : MonoBehaviour
 
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Mate")
+        {
+            velo += 5;
+            Debug.Log("cebando");
+            Destroy(collision.gameObject);
+        }
+    }
+
 }
-    
-    
-
-    
-    
-    
-    
-    
-
-
-
