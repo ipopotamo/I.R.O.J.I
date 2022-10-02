@@ -23,7 +23,6 @@ public class movimiento : MonoBehaviour
     {
         jugador = GetComponent<Rigidbody2D>();
         PlayerAnimator = GetComponent<Animator>();
-
     }
 
     
@@ -70,6 +69,14 @@ public class movimiento : MonoBehaviour
             Debug.Log("cebando");
             Destroy(collision.gameObject);
         }
+        if (collision.gameObject.tag == "Mate_do_dash")
+        {
+            cantDash ++;
+            Debug.Log("Cabado");
+            Destroy(collision.gameObject);
+        }
     }
+    
+    
 
 }

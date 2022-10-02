@@ -18,6 +18,7 @@ TagManager:
   - Juan
   - SpawnE
   - Mate
+  - Mate_do_dash
   layers:
   - Default
   - TransparentFX
