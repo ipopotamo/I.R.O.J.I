@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class movimiento : MonoBehaviour
 {
@@ -12,12 +13,10 @@ public class movimiento : MonoBehaviour
     
     private float veloDash = 5f;
     [SerializeField]public float velo = 5f;
-    [SerializeField]private float cantDash = 3f;
+    [SerializeField]public float cantDash = 3f;
     [SerializeField]private float limitDash;
     [SerializeField]private float sigDash;
-    
 
-    private RoomTemplates templates;
 
     void Start()
     {
@@ -69,7 +68,7 @@ public class movimiento : MonoBehaviour
             Debug.Log("cebando");
             Destroy(collision.gameObject);
         }
-        if (collision.gameObject.tag == "Mate_do_dash")
+        if (collision.gameObject.tag == "Mate_do_dash" && cantDash<3)
         {
             cantDash ++;
             Debug.Log("Cabado");
