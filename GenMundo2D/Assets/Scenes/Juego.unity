@@ -853,6 +853,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textoMesh: {fileID: 177867080}
   mov: {fileID: 342978297}
+  vida: {fileID: 342978294}
+  imagendash: {fileID: 123082108}
+  textoDash: {fileID: 177867077}
 --- !u!1 &189207721 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3502396232458985135, guid: f5bc5805d16bd074ba8ee8acc58edef2, type: 3}
@@ -1344,6 +1347,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6224070933198189558, guid: 5896a605b968b6a4b969234e8cad8d0e, type: 3}
   m_PrefabInstance: {fileID: 6224070933404835074}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &342978294 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6224070933198189557, guid: 5896a605b968b6a4b969234e8cad8d0e, type: 3}
+  m_PrefabInstance: {fileID: 6224070933404835074}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342978289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6282c0ad6636fdc46ac6fb6b7aed9ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &342978297 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6224070933198189552, guid: 5896a605b968b6a4b969234e8cad8d0e, type: 3}
@@ -1582,7 +1596,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -4.7230225, y: 0}
   m_SizeDelta: {x: 0.555, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4266,7 +4280,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1531954667
 RectTransform:
   m_ObjectHideFlags: 0
