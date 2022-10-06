@@ -92,5 +92,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b073081004859354d9b4879f38ffedb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tronkito: {fileID: 5314835406633848877, guid: a1727d24b19b65f4391e7e4ffad1f123, type: 3}
+  Tronkito: {fileID: 6440842218972954006, guid: 5814366b03524dc4e8e6fe7105787599, type: 3}
   M_Enemy: {fileID: 7317770529734894385}
