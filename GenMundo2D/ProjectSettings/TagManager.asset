@@ -14,11 +14,11 @@ TagManager:
   - TR
   - Enemigo
   - Jefe
-  - VistaJefe
   - Juan
   - SpawnE
   - Mate
   - Mate_do_dash
+  - Yerba
   layers:
   - Default
   - TransparentFX

@@ -39,6 +39,16 @@ public class Vida : MonoBehaviour
             vidaSlider.value -= templates.Dañofuego; // El fuego hace da�o
              
         }
+
+        if (collision.gameObject.tag == "Yerba")
+        {
+            vidaSlider.maxValue += templates.AumentoYerba;
+            Destroy(collision.gameObject);
+            if (vidaSlider.value < vidaSlider.maxValue) {
+                vidaSlider.value = vidaSlider.maxValue;
+            }
+        }
+
         if (collision.gameObject.tag == "VistaJefe")
         {
             BarravidaJefe.SetActive(true); //Esto aun no funciona pero deberia activar la barra de vida del Jefe al entrar en la sala

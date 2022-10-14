@@ -15,7 +15,7 @@ public class RoomTemplates : MonoBehaviour
 
     // Muestra Los daños recibidos por entornos y recuperacion
     public float Dañofuego = 0;
-    public float AumentoMate = 0;
+    public float AumentoYerba = 50;
     public float RecuperaHP = 50;
     public int id = 0;
 
