@@ -10,6 +10,7 @@ public class Vida : MonoBehaviour
     [SerializeField] private GameObject moriste;
     [SerializeField] private GameObject jUAN;
     private RoomTemplates templates;
+    public Defensa defensa;
     public float vida; // Valor de la vida de JUAN  
     public Slider vidaSlider; //vida de juan pero en barra
     
@@ -31,6 +32,7 @@ public class Vida : MonoBehaviour
             moriste.SetActive(true); //Activa el cartel de Moriste con los botones para de volver, revivir, etc
             BarravidaJefe.SetActive(false); // se borra la barra del Jefe
         }
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -61,7 +63,8 @@ public class Vida : MonoBehaviour
     }
     public void TomarDaño(float daño) //Cuando le pegan a Juan El recibe da�o
     {
-        vidaSlider.value -= daño;
+        float loquebajan = (daño - defensa.reduccionDañoXDefensa);
+        vidaSlider.value -= loquebajan;
         if (vidaSlider.value <= 0)
         {
             Time.timeScale = 0f;

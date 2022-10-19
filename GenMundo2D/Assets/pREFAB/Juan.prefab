@@ -103,6 +103,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velo: 5
+  cantDash: 3
+  limitDash: 0
+  sigDash: 0
 --- !u!50 &6224070933198189559
 Rigidbody2D:
   serializedVersion: 4
