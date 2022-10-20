@@ -82,4 +82,14 @@ public class CombateCuerpoaCuerpo : MonoBehaviour
             }
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Espadas")
+        {
+            DañoBarrido += 5;
+            DañoGolpe += 5;
+            Destroy(collision.gameObject);
+        }
+    }
 }
