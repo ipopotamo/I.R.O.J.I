@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class IA_Enemiga : MonoBehaviour
 {
     [SerializeField] private GameObject ControlEnemigo;
-    [SerializeField] private float daño;
+    [SerializeField] private float daÃ±o;
     //public float rango;
 
     public float velocidad;
@@ -94,7 +94,7 @@ public class IA_Enemiga : MonoBehaviour
         {
             if (colisionador.CompareTag("Juan"))
             {
-                colisionador.transform.GetComponent<Vida>().TomarDaño(daño);
+                colisionador.transform.GetComponent<Vida>().TomarDaÃ±o(daÃ±o);
             }
         }
     }
