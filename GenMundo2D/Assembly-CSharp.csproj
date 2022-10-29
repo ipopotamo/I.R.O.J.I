@@ -82,7 +82,7 @@
     <Compile Include="Assets\Scripts\RoomSpawn.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\ControlOpciones.cs" />
-    <Compile Include="Assets\Scripts\enemy_dist.cs" />
+    <Compile Include="Assets\Scripts\Distancia\enemy_dist.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
@@ -118,11 +118,11 @@
     <Compile Include="Assets\Scripts\Vida.cs" />
     <Compile Include="Assets\Scripts\Mostrar\MostrarMAXVIDA.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
-    <Compile Include="Assets\Scripts\No se usan\Disparo.cs" />
+    <Compile Include="Assets\Scripts\Rotacion\Rotacion.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Scripts\Rotacion\DanoMientrasRota.cs" />
-    <Compile Include="Assets\Scripts\Rotacion\Rotacion.cs" />
+    <Compile Include="Assets\Scripts\Distancia\bala.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
