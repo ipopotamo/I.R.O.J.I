@@ -28,7 +28,7 @@ public class RoomTemplates : MonoBehaviour
     private void Start() //Invoca el metodo para aparecer al jefe del piso
     {
         Invoke("SpawnBoss", 3f);
-        Invoke("SpawnItem", 2f);
+        //Invoke("SpawnItem", 2f);
     }
     void SpawnBoss()//Establece que el jefe saldra en la ultima sala generada, osea la sala mas lejana
     {
