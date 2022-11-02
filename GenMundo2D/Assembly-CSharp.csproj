@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Spawn\SpawnItem.cs" />
     <Compile Include="Assets\Scripts\Enemigos_Petes.cs" />
     <Compile Include="Assets\Scripts\movimiento.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
@@ -87,7 +88,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\Scripts\No se usan\HitJefe.cs" />
-    <Compile Include="Assets\Scripts\Spawn_Enemy.cs" />
+    <Compile Include="Assets\Scripts\Spawn\Spawn_Enemy.cs" />
     <Compile Include="Assets\Scripts\Mostrar\MostrarDashes.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Scripts\No se usan\RangoEnemigo.cs" />
@@ -123,7 +124,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Scripts\Rotacion\DanoMientrasRota.cs" />
-    <Compile Include="Assets\SpawnItem.cs" />
+    <Compile Include="Assets\Scripts\JefeVida.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

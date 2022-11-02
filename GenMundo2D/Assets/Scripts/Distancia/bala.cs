@@ -20,6 +20,14 @@ public class bala : MonoBehaviour
         Destroy(this.gameObject, 2);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Muro"))
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Juan"))
