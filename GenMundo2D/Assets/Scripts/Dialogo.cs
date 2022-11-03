@@ -74,6 +74,7 @@ public class Dialogo : MonoBehaviour
     {
          if(collision.gameObject.CompareTag("Juan"))
         {
+            Pdialogo.SetActive(false);
             Mdialogo.SetActive(false);
             rang = false;
         }

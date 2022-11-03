@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RoomTemplates : MonoBehaviour
 {
-    //eSTE ES UN objeto que se encuentra en el juego con el mismo nombre se establecen todas y cada una de las salas segun las sañlidas de las mismas
+    //eSTE ES UN objeto que se encuentra en el juego con el mismo nombre se establecen todas y cada una de las salas segun las saï¿½lidas de las mismas
     public GameObject[] SalidaBAja;
     public GameObject[] SalidaAlta;
     public GameObject[] SalidaDerecha;
@@ -13,8 +13,8 @@ public class RoomTemplates : MonoBehaviour
     private int rand;
 
 
-    // Muestra Los daños recibidos por entornos y recuperacion
-    public float Dañofuego = 0;
+    // Muestra Los daï¿½os recibidos por entornos y recuperacion
+    public float DaÃ±ofuego = 0;
     public float AumentoYerba = 50;
     public float RecuperaHP = 50;
     public int id = 0;
@@ -27,7 +27,7 @@ public class RoomTemplates : MonoBehaviour
     public GameObject[] items;
     private void Start() //Invoca el metodo para aparecer al jefe del piso
     {
-        Invoke("SpawnBoss", 3f);
+        //Invoke("SpawnBoss", 3f);
         //Invoke("SpawnItem", 2f);
     }
     void SpawnBoss()//Establece que el jefe saldra en la ultima sala generada, osea la sala mas lejana
