@@ -102,7 +102,7 @@ MonoBehaviour:
   RangoDeTiro: 4
   LineaDeVision: 6
   municionMadre: {fileID: 6036831592879474513}
-  municion: {fileID: 6741892490837951179, guid: e4f22dcd2f414334b9a07daada27be40, type: 3}
+  municion: {fileID: 3506382367885367362, guid: d1e6465cb2dbee34887c43a60974eb0c, type: 3}
   TiempoEntreDisparo: 1
   velo: 4
 --- !u!50 &6036831592107357116
