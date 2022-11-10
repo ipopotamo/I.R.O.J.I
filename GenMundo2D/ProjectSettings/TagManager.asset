@@ -22,6 +22,7 @@ TagManager:
   - Termo
   - Espadas
   - Muro
+  - EnemigoDistancia
   layers:
   - Default
   - TransparentFX

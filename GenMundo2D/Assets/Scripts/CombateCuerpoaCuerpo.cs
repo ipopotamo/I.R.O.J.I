@@ -38,16 +38,26 @@ public class CombateCuerpoaCuerpo : MonoBehaviour
     private void Golpe() 
     {
         animator.SetTrigger("Golpe");
+
         Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, RadioDeGolpe);
+        
+
         foreach (Collider2D colisionador in objetos)
         {
+                if (colisionador.CompareTag("EnemigoDistancia"))
+                {
+                   colisionador.transform.GetComponent<Enemigo>().TomarDaño(DañoGolpe);
+                }
+        
+       
             if (colisionador.CompareTag("Enemigo"))
             {
                 colisionador.transform.GetComponent<Enemigo>().TomarDaño(DañoGolpe);
             }
-        }
-        foreach (Collider2D colisionador in objetos)
-        {
+            
+             
+      
+        
             if (colisionador.CompareTag("Jefe"))
             {
                 colisionador.transform.GetComponent<JefeVida>().TomarDaño(DañoGolpe);
@@ -72,6 +82,13 @@ public class CombateCuerpoaCuerpo : MonoBehaviour
         Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, RadioDeBarrido);
         foreach (Collider2D colisionador in objetos)
         {
+           
+            if (colisionador.CompareTag("EnemigoDistancia"))
+            {
+                   colisionador.transform.GetComponent<Enemigo>().TomarDaño(DañoGolpe);
+            }
+        
+
             if (colisionador.CompareTag("Enemigo"))
             {
                 colisionador.transform.GetComponent<Enemigo>().TomarDaño(DañoBarrido);
