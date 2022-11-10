@@ -16,6 +16,13 @@ public class Controlador : MonoBehaviour
         SceneManager.LoadScene("Juego");
         //SceneManager.GetActiveScene().buildIndex + 1
     }
+
+    public void CargoEsena(string esena){
+    
+    SceneManager.LoadScene(esena);
+
+    }
+
     public void Salir()
     {
         #if UNITY_EDITOR
