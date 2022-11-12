@@ -79,7 +79,7 @@ public class IA_Enemiga : MonoBehaviour
             animacion.SetBool("Ataque", isInAttackRange);
             Ataque();
             tiempoSiguienteAtaque = tiempoEntreAtaques;
-            Debug.Log("Atacando");
+            //Debug.Log("Atacando");
         }
     }
 
