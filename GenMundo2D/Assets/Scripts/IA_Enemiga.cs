@@ -75,7 +75,7 @@ public class IA_Enemiga : MonoBehaviour
         }
         if (isInAttackRange && tiempoSiguienteAtaque<=0)
         {
-            //rb.velocity = Vector2.zero;
+            rb.velocity = Vector2.zero;
             animacion.SetBool("Ataque", isInAttackRange);
             Ataque();
             tiempoSiguienteAtaque = tiempoEntreAtaques;

@@ -18,6 +18,7 @@ public class Vida : MonoBehaviour
 
     private void Start()
     {
+        
         vida = vidaSlider.value; // refleja el valor de la vida en su respectiva barra 
         Time.timeScale = 1f; //reanuda el tiempo despues de muertos o al aparecer
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();

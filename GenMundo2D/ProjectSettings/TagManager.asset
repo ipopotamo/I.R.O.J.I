@@ -23,6 +23,7 @@ TagManager:
   - Espadas
   - Muro
   - EnemigoDistancia
+  - BarraVidaJEFE
   layers:
   - Default
   - TransparentFX

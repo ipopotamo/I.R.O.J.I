@@ -102,10 +102,12 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\jefe_octanolohizo.cs" />
     <Compile Include="Assets\Scripts\Mostrar\MostrarVidaActual.cs" />
+    <Compile Include="Assets\Scripts\PUERTAS\1\Puerta.cs" />
     <Compile Include="Assets\Scripts\JefeVida.cs" />
     <Compile Include="Assets\Scripts\AgregarALista.cs" />
     <Compile Include="Assets\Scripts\tpMenu.cs" />
     <Compile Include="Assets\Scripts\No se usan\Disparar.cs" />
+    <Compile Include="Assets\Scripts\PUERTAS\1\ABRIRPuerta.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Dialogo.cs" />
     <Compile Include="Assets\Scripts\PausaControlador.cs" />
@@ -127,7 +129,9 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Scripts\Rotacion\DanoMientrasRota.cs" />
-    <Compile Include="Assets\Puerta.cs" />
+    <Compile Include="Assets\Scripts\PUERTAS\2\ABRIR2puertas.cs" />
+    <Compile Include="Assets\Scripts\PUERTAS\2\Puerta2.cs" />
+    <Compile Include="Assets\EfectosCercanosAlJEFE.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

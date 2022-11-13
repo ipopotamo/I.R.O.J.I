@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class Spawn_Enemy : MonoBehaviour
 {
-    [SerializeField]  private GameObject Tronkito;
+    [SerializeField]  private GameObject[] Enemigos;
     [SerializeField]  private  GameObject M_Enemy;
 
-
+    private int rand;
     void Start()
     {
          Invoke("Spawn", 0.1f);
     }
     void Spawn()
     {
-        Instantiate(Tronkito, M_Enemy.transform );        
+        rand = Random.Range(0, Enemigos.Length);
+        Instantiate(Enemigos[rand], M_Enemy.transform );        
     }
 
 
