@@ -24,6 +24,7 @@ TagManager:
   - Muro
   - EnemigoDistancia
   - BarraVidaJEFE
+  - npc
   layers:
   - Default
   - TransparentFX
