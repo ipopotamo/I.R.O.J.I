@@ -25,6 +25,9 @@ TagManager:
   - EnemigoDistancia
   - BarraVidaJEFE
   - npc
+  - vidaSlider
+  - mostrarVida
+  - STATS
   layers:
   - Default
   - TransparentFX

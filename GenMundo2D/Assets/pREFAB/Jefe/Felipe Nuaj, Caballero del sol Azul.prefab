@@ -267,6 +267,7 @@ MonoBehaviour:
   EntraenSegundaFase: 100
   fuego: {fileID: 8252472086797838488}
   BarraVida: {fileID: 0}
+  Portal: {fileID: 4071173423560737617, guid: 18dc6cfd93808464c921393c6bc450aa, type: 3}
 --- !u!1 &8252472086797838488
 GameObject:
   m_ObjectHideFlags: 0

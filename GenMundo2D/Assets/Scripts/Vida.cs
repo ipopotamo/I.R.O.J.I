@@ -13,15 +13,23 @@ public class Vida : MonoBehaviour
     public Defensa defensa;
     public float vida; // Valor de la vida de JUAN  
     public Slider vidaSlider; //vida de juan pero en barra
+
+    private EstadisticasJuanGuardadas EstadisticasLevelAnterior;
     
 
 
     private void Start()
     {
         
+        vidaSlider = GameObject.FindGameObjectWithTag("vidaSlider").GetComponent<Slider>();
         vida = vidaSlider.value; // refleja el valor de la vida en su respectiva barra 
         Time.timeScale = 1f; //reanuda el tiempo despues de muertos o al aparecer
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
+        EstadisticasLevelAnterior = GameObject.FindGameObjectWithTag("STATS").GetComponent<EstadisticasJuanGuardadas>();
+        
+        vidaSlider.maxValue = EstadisticasLevelAnterior.VidaMax;
+        vidaSlider.value = vidaSlider.maxValue;
+       
     }
     private void Update() 
     {
@@ -46,6 +54,10 @@ public class Vida : MonoBehaviour
         if (collision.gameObject.tag == "Yerba")
         {
             vidaSlider.maxValue += templates.AumentoYerba;
+            
+            //Guarda la cantidad maxima de vida para el proximo nivel
+            EstadisticasLevelAnterior.VidaMax += templates.AumentoYerba;
+            
             Destroy(collision.gameObject);
             if (vidaSlider.value < vidaSlider.maxValue) {
                 vidaSlider.value = vidaSlider.maxValue;

@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\Spawn\SpawnItem.cs" />
      <Compile Include="Assets\Scripts\Enemigos_Petes.cs" />
      <Compile Include="Assets\Scripts\movimiento.cs" />
+     <Compile Include="Assets\NoSeDestruteAlPasarDeNivel.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\Scripts\CombateCuerpoaCuerpo.cs" />
@@ -58,6 +59,7 @@
      <Compile Include="Assets\Scripts\CamaraControl.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
      <Compile Include="Assets\Scripts\AumentoDeStats.cs" />
+     <Compile Include="Assets\TPalMatarAlJefe.cs" />
      <Compile Include="Assets\Scripts\Destruccion.cs" />
      <Compile Include="Assets\Scripts\RoomTemplates.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -75,6 +77,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
      <Compile Include="Assets\Scripts\ControlOpciones.cs" />
      <Compile Include="Assets\Scripts\Distancia\enemy_dist.cs" />
+     <Compile Include="Assets\EstadisticasJuanGuardadas.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />

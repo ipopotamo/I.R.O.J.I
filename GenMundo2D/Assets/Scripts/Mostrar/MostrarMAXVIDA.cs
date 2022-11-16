@@ -11,12 +11,14 @@ public class MostrarMAXVIDA : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MaxVida = GetComponent<TextMeshProUGUI>();
+        MaxVida = GameObject.FindGameObjectWithTag("mostrarVida").GetComponent<TextMeshProUGUI>();
+        Vida = GameObject.FindGameObjectWithTag("vidaSlider").GetComponent<Slider>();
+        //MaxVida = GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        MaxVida.text = Vida.maxValue.ToString();
+        MaxVida.text = Vida.value + "   /   " + Vida.maxValue.ToString();
     }
 }
