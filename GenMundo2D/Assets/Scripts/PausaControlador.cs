@@ -9,6 +9,12 @@ public class PausaControlador : MonoBehaviour
     [SerializeField] private GameObject menuPausa;
     private bool juegopausado = false;
 
+
+    private EstadisticasJuanGuardadas EstadisticasLevelAnterior;
+    private void Start()
+    {
+        EstadisticasLevelAnterior = GameObject.FindGameObjectWithTag("STATS").GetComponent<EstadisticasJuanGuardadas>();
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -42,8 +48,10 @@ public class PausaControlador : MonoBehaviour
     public void Reiniciar()
     {
         juegopausado = false;
+        Destroy(EstadisticasLevelAnterior.gameObject);
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("Juego");
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         menuPausa.SetActive(false);
     }
     public void Salir_al_Menu()

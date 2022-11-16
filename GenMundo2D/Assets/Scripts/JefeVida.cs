@@ -10,11 +10,12 @@ public class JefeVida : MonoBehaviour
     [SerializeField] public float EntraenSegundaFase; 
     [SerializeField] GameObject fuego;
     public Slider BarraVida;
+    [SerializeField] private GameObject Portal;
 
     private void Start()
     {
          BarraVida = GameObject.FindGameObjectWithTag("BarraVidaJEFE").GetComponent<Slider>();
-        BarraVida.maxValue = vida;
+         BarraVida.maxValue = vida;
     }
     private void Update()
     {
@@ -34,6 +35,7 @@ public class JefeVida : MonoBehaviour
         {
             Destroy(BarraVida.gameObject);
             Destroy(gameObject);
+            Instantiate(Portal,this.transform.position, Quaternion.Euler(0, 0, 0));
         }
     }
 }

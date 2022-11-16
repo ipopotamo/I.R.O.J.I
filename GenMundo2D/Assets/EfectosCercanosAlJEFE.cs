@@ -8,6 +8,7 @@ public class EfectosCercanosAlJEFE : MonoBehaviour
     [SerializeField]private GameObject BarraVida;
     public int UnidadesAbajarParaQueAparezcaLaBarra = 20;
 
+
     private float tiempoEntreVeneno = 3f;
     private float TiempoSiguienteDano;
     // Start is called before the first frame update

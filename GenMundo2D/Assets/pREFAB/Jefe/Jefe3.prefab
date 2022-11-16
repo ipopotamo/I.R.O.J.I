@@ -313,6 +313,7 @@ MonoBehaviour:
   EntraenSegundaFase: 30
   fuego: {fileID: 6031242547731918323}
   BarraVida: {fileID: 0}
+  Portal: {fileID: 4071173423560737617, guid: 18dc6cfd93808464c921393c6bc450aa, type: 3}
 --- !u!1001 &2729745489103600350
 PrefabInstance:
   m_ObjectHideFlags: 0
