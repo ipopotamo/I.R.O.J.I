@@ -11,7 +11,7 @@ public class tpMenu : MonoBehaviour
     
     public void Start()
     {
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
     public void Update(){
        if(!GameObject.FindWithTag("EnemigoDistancia")){

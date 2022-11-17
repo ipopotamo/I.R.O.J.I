@@ -28,6 +28,7 @@ TagManager:
   - vidaSlider
   - mostrarVida
   - STATS
+  - PisoTemplo
   layers:
   - Default
   - TransparentFX

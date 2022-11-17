@@ -62,6 +62,6 @@ public class PausaControlador : MonoBehaviour
     }
     public void Cerrar_juego()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
+       // UnityEditor.EditorApplication.isPlaying = false;
     }
 }

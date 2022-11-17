@@ -16,8 +16,8 @@ EditorBuildSettings:
     guid: d9dbad5d4725f384ba1da4f61ae18ba4
   - enabled: 1
     path: Assets/Scenes/Arcade.unity
-    guid: 2f7e1a7ead80dab45984f915759416b3
+    guid: ba029bf2437939941a67d4350d5b42e8
   - enabled: 1
     path: Assets/Scenes/Level2.unity
-    guid: cb7bbb39c83863a46b25449be2be3ddd
+    guid: 127be529db674c941aded5fdc8a742db
   m_configObjects: {}
